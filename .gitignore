@@ -1,0 +1,12 @@
+# Virtuelle Umgebung (wird lokal erzeugt, nicht versioniert)
+venv/
+.venv/
+
+# Python-Cache
+__pycache__/
+*.pyc
+
+# Editor-/OS-Dateien
+.vscode/
+.idea/
+.DS_Store
