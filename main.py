@@ -32,3 +32,13 @@ gesamtbetrag_2 = gesamtbetrag_aus_pdf_lesen("rechnungen/rechnung_2.pdf")
 
 print("Rechnung 1:", gesamtbetrag_1)
 print("Rechnung 2:", gesamtbetrag_2)
+
+# Beträge vergleichen (mit kleiner Toleranz statt exaktem ==)
+differenz = abs(gesamtbetrag_1 - gesamtbetrag_2)
+
+if differenz < 0.01:
+    ergebnis = "Die Rechnungen stimmen ueberein."
+else:
+    ergebnis = f"Achtung: Abweichung von {differenz:.2f} EUR!"
+
+print(ergebnis)
